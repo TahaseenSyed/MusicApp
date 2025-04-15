@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/create_playlist"
+        android:title="Create Playlist"
+        android:icon="@drawable/ic_add_playlist" />
+    <item
+        android:id="@+id/delete_playlist"
+        android:title="Delete Playlist"
+        android:icon="@drawable/ic_delete_playlist" />
+</menu>

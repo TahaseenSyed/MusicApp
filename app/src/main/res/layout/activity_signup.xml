@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#1C1C1E">
+
+    <!-- Music App Logo -->
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/img_1"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:contentDescription="Music App Logo" />
+
+    <!-- Added Spacer -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <!-- Full Name Input -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:padding="14dp"
+        android:background="@drawable/edittext_bg"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="12dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <!-- Added Spacer -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="14dp"
+        android:background="@drawable/edittext_bg"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="12dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <!-- Added Spacer -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+
+    <!-- Password Input with Eye Icon --><RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_bg">
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:padding="14dp"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/ic_visibility"
+            android:drawablePadding="12dp" />
+
+        <ImageView
+            android:id="@+id/ivTogglePassword"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:contentDescription="Toggle Password Visibility"
+            android:clickable="true"
+            android:focusable="true" />
+    </RelativeLayout>
+
+    <!-- Added Spacer -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <!-- Sign-Up Button -->
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Sign Up"
+        android:textSize="16sp"
+        android:background="@drawable/btn_gradient"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-medium"
+        style="@style/ButtonStyle" />
+
+    <!-- Added Spacer -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+
+    <!-- Login Text -->
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:fontFamily="sans-serif-medium" />
+
+</LinearLayout>

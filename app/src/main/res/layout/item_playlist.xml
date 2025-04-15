@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="8dp"
+    android:background="#1C1C1E">
+
+    <!-- Playlist Image -->
+    <ImageView
+        android:id="@+id/playlist_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/playlist_1" />
+
+    <!-- Playlist Name -->
+    <TextView
+        android:id="@+id/playlist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:text="Top Hits 2024"
+        android:textColor="@color/pink"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!-- Three-Dot Menu -->
+    <ImageView
+        android:id="@+id/moreOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rounded_bg"
+        android:contentDescription="More options"
+        android:padding="4dp"/>
+</LinearLayout>

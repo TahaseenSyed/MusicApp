@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/nav_home">
+
+    <!-- Home Fragment - Default start destination -->
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.klu.musicplayer.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+
+        <!-- Navigation actions from HomeFragment -->
+        <action
+            android:id="@+id/action_homeFragment_to_playerFragment"
+            app:destination="@id/playerFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_playlistFragment"
+            app:destination="@id/playlistFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+
+        <action
+            android:id="@+id/action_home_to_trendingSongs"
+            app:destination="@id/trendingSongsFragment" />
+
+        <action
+            android:id="@+id/action_home_to_popularArtists"
+            app:destination="@id/popularArtistsFragment" />
+
+        <action
+            android:id="@+id/action_home_to_recentlyPlayed"
+            app:destination="@id/recentlyPlayedFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_artistFragment"
+            app:destination="@id/artistFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_notifications"
+            app:destination="@id/notificationFragment" />
+    </fragment>
+
+    <!-- Player Fragment -->
+    <fragment
+        android:id="@+id/playerFragment"
+        android:name="com.klu.musicplayer.PlayerFragment"
+        android:label="Player"
+        tools:layout="@layout/fragment_player" />
+
+    <!-- Artist Fragment -->
+    <fragment
+        android:id="@+id/artistFragment"
+        android:name="com.klu.musicplayer.ArtistFragment"
+        android:label="Artists"
+        tools:layout="@layout/fragment_artist" />
+
+    <!-- Playlist Fragment -->
+    <fragment
+        android:id="@+id/playlistFragment"
+        android:name="com.klu.musicplayer.PlaylistFragment"
+        android:label="Playlist"
+        tools:layout="@layout/fragment_playlist" />
+
+    <!-- Search Fragment -->
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.klu.musicplayer.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" />
+
+    <!-- Profile Fragment (updated with action to Edit Profile) -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.klu.musicplayer.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+
+        <!-- New Action: Profile -> Edit Profile -->
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+
+    <!-- Trending Songs Fragment -->
+    <fragment
+        android:id="@+id/trendingSongsFragment"
+        android:name="com.klu.musicplayer.TrendingSongsFragment"
+        android:label="Trending Songs"
+        tools:layout="@layout/fragment_trending_songs">
+        <argument
+            android:name="selectedSong"
+            app:argType="string" />
+    </fragment>
+
+    <!-- Popular Artists Fragment -->
+    <fragment
+        android:id="@+id/popularArtistsFragment"
+        android:name="com.klu.musicplayer.PopularArtistsFragment"
+        android:label="Popular Artists"
+        tools:layout="@layout/fragment_popular_artists">
+        <argument
+            android:name="selectedArtist"
+            app:argType="string" />
+    </fragment>
+
+    <!-- Recently Played Fragment -->
+    <fragment
+        android:id="@+id/recentlyPlayedFragment"
+        android:name="com.klu.musicplayer.RecentlyPlayedFragment"
+        android:label="Recently Played"
+        tools:layout="@layout/fragment_recently_played">
+        <argument
+            android:name="selectedSong"
+            app:argType="string" />
+    </fragment>
+
+    <!-- Notifications Fragment -->
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.klu.musicplayer.NotificationFragment"
+        android:label="Notifications"
+        tools:layout="@layout/fragment_notification" />
+
+    <!-- New Edit Profile Fragment -->
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.klu.musicplayer.ProfileFragment"
+        android:label="Edit Profile" />
+</navigation>

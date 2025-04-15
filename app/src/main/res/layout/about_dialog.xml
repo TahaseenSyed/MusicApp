@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/appIcon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/img_1"
+            android:contentDescription="App Icon"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MelodyStream"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A1A"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/appVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version 1.0.0"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="24dp" />
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginBottom="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="16dp">
+
+            <TextView
+                android:id="@+id/developerTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Developer"
+                android:textSize="14sp"
+                android:textColor="#888888"
+                android:fontFamily="sans-serif"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/developer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team Melody"
+                android:textSize="18sp"
+                android:textColor="#333333"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/backendTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Backend Technology"
+                android:textSize="14sp"
+                android:textColor="#888888"
+                android:fontFamily="sans-serif"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/backend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Node.js + MySQL"
+                android:textSize="18sp"
+                android:textColor="#333333"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/authenticationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Authentication"
+                android:textSize="14sp"
+                android:textColor="#888888"
+                android:fontFamily="sans-serif"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/authentication"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Firebase Authentication"
+                android:textSize="18sp"
+                android:textColor="#333333"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="© 2025 MelodyStream. All rights reserved."
+            android:textSize="12sp"
+            android:textColor="#AAAAAA"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1C1C1E"
+    android:padding="20dp">
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_back"
+        app:tint="#F4A261"
+        android:contentDescription="Back Button"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- Playlist Info Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <!-- Playlist Cover -->
+        <ImageView
+            android:id="@+id/playlistCover"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/playlist_cover"
+            android:elevation="8dp"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Playlist Details -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/playlistTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please go to therapy"
+                android:textColor="#F4A261"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+            <TextView
+                android:id="@+id/playlistDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Relaxing tracks to set the mood"
+                android:textColor="#B0BEC5"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp" />
+
+            <!-- Play and Radio Buttons -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp">
+
+                <Button
+                    android:id="@+id/playButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shuffle Play"
+                    android:textColor="#1C1C1E"
+                    android:textStyle="bold"
+                    android:backgroundTint="#F4A261"
+                    android:layout_marginEnd="8dp" />
+
+                <Button
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Radio"
+                    android:textColor="#1C1C1E"
+                    android:textStyle="bold"
+                    android:backgroundTint="#F4A261" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Top Songs Header -->
+    <TextView
+        android:id="@+id/tracksHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top Songs"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- RecyclerView for Track List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/trackList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:background="#2A2A2E"
+        android:scrollbars="vertical" />
+</LinearLayout>
